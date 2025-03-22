@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="17" viewBox="0 0 57 17">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 24px;
+        text-anchor: middle;
+        font-family: "TeX Gyre Adventor";
+      }
+    </style>
+  </defs>
+  <text id="Menit" class="cls-1" transform="translate(28.477 16.469) scale(0.881)"><tspan x="0">Menit</tspan></text>
+</svg>

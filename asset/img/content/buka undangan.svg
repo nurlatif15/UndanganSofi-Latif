@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="372" height="95" viewBox="0 0 372 95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0d7d0;
+      }
+
+      .cls-2 {
+        fill: #e88d75;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 41px;
+        text-anchor: middle;
+        font-family: "Bulletto Killa¬";
+      }
+
+      .cls-4 {
+        fill: #2e2e2e;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-1" x="4" y="5" width="368" height="90" rx="15" ry="15"/>
+    <rect id="Rectangle_2_copy" data-name="Rectangle 2 copy" class="cls-2" width="368" height="90" rx="15" ry="15"/>
+  </g>
+  <g>
+    <text id="Buka_Undangan" data-name="Buka Undangan" class="cls-3" x="185.001" y="57.001">Buka Undangan</text>
+    <text id="Buka_Undangan-2" data-name="Buka Undangan" class="cls-4" x="184.001" y="56">Buka Undangan</text>
+  </g>
+</svg>

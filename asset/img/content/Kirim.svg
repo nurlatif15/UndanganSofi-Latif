@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="15" viewBox="0 0 40 15">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 19px;
+        text-anchor: middle;
+        font-family: "TeX Gyre Adventor";
+      }
+    </style>
+  </defs>
+  <text id="Kirim" class="cls-1" x="20.95" y="15.361"><tspan x="20.95">Kirim</tspan></text>
+</svg>

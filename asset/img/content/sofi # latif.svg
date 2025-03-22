@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="421" height="166" viewBox="0 0 421 166">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        font-size: 123px;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        text-anchor: middle;
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        font-family: Allura;
+      }
+
+      .cls-3 {
+        font-size: 100px;
+      }
+
+      .cls-4 {
+        font-size: 85px;
+      }
+
+      .cls-5 {
+        font-size: 21.697px;
+        filter: url(#filter-2);
+        font-family: "TeX Gyre Adventor";
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.071" dy="7.727" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-color="#090909" flood-opacity="0.21"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="156" y="237" width="421" height="47" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.071" dy="7.727" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-color="#090909" flood-opacity="0.21"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="sofi_latif_" data-name="sofi latif " class="cls-1">
+    <text id="Sofi" class="cls-2" x="85.693" y="130.024">S<tspan class="cls-3">ofi</tspan></text>
+    <text id="Latif" class="cls-2" x="292.692" y="125.024">L<tspan class="cls-3">atif</tspan></text>
+    <text id="_" data-name="&amp;" class="cls-4" transform="translate(196.067 92.121) scale(0.548)">&amp;</text>
+  </g>
+  <text id="Undangan_Pernikahan_" data-name="Undangan Pernikahan " class="cls-5" transform="translate(207.532 27.028) scale(1.659)">Undangan Pernikahan</text>
+</svg>
