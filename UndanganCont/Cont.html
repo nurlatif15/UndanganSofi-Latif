@@ -19,7 +19,7 @@
             <h2 class="KeduaMempelai">Kedua Mempelai</h2>
             <p class="namaPasangan">Nursofiatun Khofifah <br>
                 <span class="namaortu1">
-                    Putri Ke-2 dari Keluarga Bapak Soleh & Ibu Idah
+                    Putri Ke-2 dari Keluarga Bapak M. Soleh & Ibu Ida Huraidah
                 </span>
                 <br>&<br>
                 Nur Latif Juliyanto <br>
@@ -27,9 +27,10 @@
             </p>
         </div>
         
-        <div class="section">
+        <div class="barakad">
             <h2 class="Akad">Akad</h2>
-            <p>Hitung mundur ke hari istimewa kami!</p>
+            <p class="texthitungmundur">Hitung mundur ke hari istimewa kami! yang InsyaAllah dilaksanakan pada tanggal <br>..., ....., 2025 </p>
+            
             <div class="countdown-container">
                 <div class="countdown-box">
                     <div id="days">00</div>
@@ -52,18 +53,57 @@
         </div>
         
         <div class="section">
-            <h2>Resepsi</h2>
-            <p>Acara InsyaAllah dilaksanakan di tempat mempelai wanita.</p>
-            <button class="button">Cek Lokasi</button>
+            <h2 class="Resepsi">Resepsi</h2>
+            <p class="tempatacara">Acara InsyaAllah dilaksanakan di tempat mempelai wanita.</p>
+
+            <!-- map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d598.3626422765752!2d108.57503630750804!3d-6.724278315077041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1742841448800!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+             <!-- end map  -->
+            <a href="https://maps.app.goo.gl/F7T4g4q6hc52HpC27"><div class="ceklokasi"><img src="assetcont/img/ceklokasi.svg" alt=""></div></a>
         </div>
         
-        <div class="section">
-            <h2>Reservasi</h2>
-            <p>Konfirmasi kehadiran Anda.</p>
-            <input type="text" placeholder="Nama">
-            <textarea placeholder="Pesan"></textarea>
-            <button class="button">Kirim</button>
+        <div class="container" style="max-width: max-content;">
+            <h2 class="Reservasi">Reservasi</h2>
+            <form id="reservationForm">
+                <input type="text" id="nama" placeholder="Nama Anda" required>
+                <select id="kehadiran">
+                    <option value="Hadir">Hadir</option>
+                    <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+                <textarea id="pesan" placeholder="Pesan (Opsional)"></textarea>
+                <button class="" type="submit">Kirim</button>
+            </form>
+            <p id="status" style="color: green; display: none;">Terima kasih! Data Anda telah dikirim.</p>
+        
         </div>
+        <!-- buat kado pasangan pengantin  -->
+        <div class="kado-section">
+            <h3>Hadiah untuk Pengantin</h3>
+            <p>Jika ingin memberikan tanda kasih, bisa melalui rekening berikut:</p>
+            
+            <div class="rekening">
+                <span id="nomorRekening"> 081214640275 <br> (Dana A/n Nursofiatun Khofifah)</span>
+                <button onclick="salinRekening()">Salin Rekening</button>
+            </div>
+            
+            <a href="https://link.dana.id/minta/2vs0xt33go8"target="_blank" class="transfer-button">
+                Transfer Sekarang
+            </a>
+        </div>
+        <div class="kado-section">
+            <div class="rekening">
+                <span id="nomorRekening">1234567890 (BCA - A/N Nama Pengantin)</span>
+                <button onclick="salinRekening()">Salin Rekening</button>
+            </div>
+            <a href="https://m-bca.onelink.me/QKON/xxxxxx" target="_blank" class="transfer-button">
+                Transfer Sekarang
+            </a>
+        </div>
+        
+        
+         <!-- end kado  -->
     </div>
 </body>
 <script src="assetcont/js/cont.js"></script>
