@@ -4,7 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Latin';
+    src: url('../font/GreatVibes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     display: flex;
     justify-content: center;
@@ -59,17 +64,17 @@ body {
 .KeduaMempelai{
     color: #5a3e36;
     font-weight: 400;
-    font-size: 24px;
-    font-family: "Head"; /* pilih font saja  */
+    font-size: 48px;
+    font-family: "Latin"; /* pilih font saja  */
 
 }
 
 .namaPasangan{
     color: #241917;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Head";
-    margin-bottom: 24px; 
+    margin-bottom: 100px; 
 }
 .namaortu1{
     color: #241917;
@@ -84,18 +89,24 @@ body {
     margin-bottom: 24px;  
 }
 .Akad {
-    color: #5a3e36;
     font-weight: 400;
-    font-size: 24px;
-    font-family: "Head";
+    font-size: 48px;
+    font-family: "Latin";
+    margin-bottom: 50px;
+    
 }
-.button {
-    background-color: #5a3e36;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.barakad { 
+
+    background-color: #fff;  /* Menyesuaikan gambar agar memenuhi elemen */
+    background-position: center; /* Posisi gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah gambar berulang */
+    padding: 20px; /* Beri jarak agar teks lebih jelas */
+    text-align: center; /* Tengahin teks */
+    border-radius: 200px 200px 0 0;
+}
+.texthitungmundur{
+    font-family: "Head";
+    margin-bottom: 40px;
 }
 
 /* Responsif untuk layar kecil */
@@ -103,7 +114,13 @@ body {
     .invitation-container {
         padding: 15px;
     }
-
+    .barakad { 
+        background-size: cover;  /* Menyesuaikan gambar agar memenuhi elemen */
+        background-position: center; /* Posisi gambar di tengah */
+        background-repeat: no-repeat; /* Mencegah gambar berulang */
+        padding: 10px; /* Beri jarak agar teks lebih jelas */
+        text-align: center; /* Tengahin teks */
+    }
     .logo {
         width: 70px;
         margin-bottom: 40px;
@@ -116,11 +133,6 @@ body {
     p {
         font-size: 12px;
     }
-
-    .button {
-        padding: 8px 15px;
-        font-size: 12px;
-    }
 }
 /* Hitun mundur */
 .countdown-container {
@@ -129,14 +141,14 @@ body {
     gap: 10px;
 }
 .countdown-box {
-    border: 3px solid #ff4081;
     padding: 15px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #dadada;
     font-size: 20px;
     font-weight: bold;
     width: 30px;
     text-align: center;
+    font-family: "Head";
 }
 .label {
     font-size: 12px;
@@ -168,5 +180,163 @@ body {
         width: 30px;
         padding: 8px;
         font-size: 16px;
+        margin-bottom: 100px;
     }
 }
+
+.Resepsi{
+    font-weight: 400;
+    font-size: 48px;
+    font-family: "Latin";
+    margin-top: 100px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px; /* Ukuran default */
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+/* Untuk perangkat mobile dengan lebar kurang dari 768px */
+@media (max-width: 768px) {
+    .map-container iframe {
+        width: 90%; /* Ukuran lebih kecil */
+        height: 200px; /* Kurangi tinggi */
+        display: block;
+        margin: 0 auto; /* Tengah */
+    }
+}
+    .tempatacara{
+        font-family: "Head";
+    }
+
+    .Reservasi{
+        font-weight: 400;
+        font-size: 48px;
+        font-family: "Latin";
+        margin-bottom: 50px;
+    }
+
+    .ceklokasi img{
+        width: 180px;
+    }
+    .ceklokasi{
+        border: none; /* Menghapus border */
+        outline: none; /* Menghapus outline saat klik */
+        box-shadow: none; /* Menghapus bayangan */
+        background-color: #f4c6b4;
+        margin-top: 50px;
+
+
+    }
+
+    /* reservasi */
+/* Memperlebar kontainer */
+.container {
+    max-width: 600px; /* Lebar diperbesar */
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Menyesuaikan input, select, dan textarea agar lebar penuh */
+input, select, textarea {
+    width: calc(100% - 20px); /* Lebar lebih besar dan proporsional */
+    padding: 12px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Menghindari elemen melewati lebar kontainer */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+button {
+    background-color: #d6336c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: #a62250;
+}
+/* kado */
+.kado-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff3f8;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.kado-section h3 {
+    font-size: 20px;
+    color: #d6336c;
+    margin-bottom: 10px;
+}
+
+.kado-section p {
+    font-size: 14px;
+    color: #444;
+}
+
+.rekening {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d6336c;
+    margin: 10px 0;
+}
+
+.rekening span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.rekening button {
+    background: #d6336c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transfer-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #d6336c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.transfer-button:hover {
+    background: #a62250;
+}
+
