@@ -20,7 +20,10 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
-
+button{
+    border: none;
+    color: none;
+}
 .invitation-container {
     width: 90%;
     max-width: 375px; /* Batas maksimal untuk mobile */
@@ -152,7 +155,7 @@ body {
 }
 .label {
     font-size: 12px;
-    color: #555;
+    color: #131111;
 }
 
 @media (max-width: 720px) {
@@ -184,12 +187,6 @@ body {
     }
 }
 
-.Resepsi{
-    font-weight: 400;
-    font-size: 48px;
-    font-family: "Latin";
-    margin-top: 100px;
-}
 
 .map-container iframe {
     width: 100%;
@@ -209,13 +206,6 @@ body {
 }
     .tempatacara{
         font-family: "Head";
-    }
-
-    .Reservasi{
-        font-weight: 400;
-        font-size: 48px;
-        font-family: "Latin";
-        margin-bottom: 50px;
     }
 
     .ceklokasi img{
@@ -262,81 +252,63 @@ input, select, textarea {
     }
 }
 
-button {
-    background-color: #d6336c;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    display: block;
-    width: calc(100% - 20px);
-    margin: 10px auto;
-}
-
-button:hover {
-    background-color: #a62250;
+.kirim{
+    width: 100px; /* Atur ukuran sesuai kebutuhan */
+    height: auto; /* Biarkan proporsi tetap terjaga */   
 }
 /* kado */
-.kado-section {
+.card {
+    width: 320px;
+    height: 180px;
+    background: linear-gradient(135deg, #fff1f1, #f59e9e);
+    color: rgb(24, 24, 24);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+}
+.bank-logo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.info {
+    font-family: "Head";
     margin-top: 20px;
-    padding: 20px;
-    background: #fff3f8;
-    border-radius: 10px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-    text-align: center;
+    text-align: left;
 }
-
-.kado-section h3 {
-    font-size: 20px;
-    color: #d6336c;
-    margin-bottom: 10px;
+.label {
+    font-size: 12px;
+    opacity: 0.8;
 }
-
-.kado-section p {
+.account-number {
+    font-size: 18px;
+    font-weight: bold;
+}
+.owner-name {
     font-size: 14px;
-    color: #444;
+    font-weight: bold;
 }
-
-.rekening {
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
+.actions {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #d6336c;
-    margin: 10px 0;
+    gap: 10px;
 }
-
-.rekening span {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
+.small-img {
+    width: 80px; /* Atur ukuran sesuai kebutuhan */
+    height: auto; /* Biarkan proporsi tetap terjaga */
 }
-
-.rekening button {
-    background: #d6336c;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+.btn-tf{
+    width: 80px; /* Atur ukuran sesuai kebutuhan */
+    height: auto; /* Biarkan proporsi tetap terjaga */
 }
-
-.transfer-button {
-    display: block;
-    margin-top: 10px;
-    padding: 10px;
-    background: #d6336c;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+.Bank{
+    width: 80px; /* Atur ukuran sesuai kebutuhan */
+    height: auto; /* Biarkan proporsi tetap terjaga */
 }
-
-.transfer-button:hover {
-    background: #a62250;
-}
-
