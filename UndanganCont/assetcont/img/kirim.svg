@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="237" height="78" viewBox="0 0 237 78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0d7d0;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #e88d75;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 41px;
+        text-anchor: middle;
+        font-family: "Bulletto Killa¬";
+      }
+
+      .cls-4 {
+        fill: #2e2e2e;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M365.548,125.105H570a15,15,0,0,1,15,15V184a15,15,0,0,1-15,15H365.548a15,15,0,0,1-15-15V140.1A15,15,0,0,1,365.548,125.105Z" transform="translate(-348 -121)"/>
+  <path id="Rectangle_2_copy" data-name="Rectangle 2 copy" class="cls-2" d="M363,121H567.452a15,15,0,0,1,15,15v43.9a15,15,0,0,1-15,15H363a15,15,0,0,1-15-15V136A15,15,0,0,1,363,121Z" transform="translate(-348 -121)"/>
+  <text id="Kirim" class="cls-3" x="119" y="51">Kirim</text>
+  <text id="Kirim-2" data-name="Kirim" class="cls-4" x="117" y="49">Kirim</text>
+</svg>
