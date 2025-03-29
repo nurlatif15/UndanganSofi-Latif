@@ -53,10 +53,10 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
 });
 
 
-
-// salin no rek 
-function salinRekening() {
-    var nomor = document.getElementById("nomorRekening").innerText;
-    navigator.clipboard.writeText(nomor);
-    alert("Nomor rekening berhasil disalin!");
+// kado
+function copyAccount() {
+    const accountNumber = document.getElementById("account-number").innerText;
+    navigator.clipboard.writeText(accountNumber).then(() => {
+        alert("Nomor rekening disalin!");
+    });
 }
