@@ -16,7 +16,7 @@
         </div>
         
         <div class="section">
-            <h2 class="KeduaMempelai">Kedua Mempelai</h2>
+            <h2 class="KeduaMempelai"> - Kedua Mempelai -</h2>
             <p class="namaPasangan">Nursofiatun Khofifah <br>
                 <span class="namaortu1">
                     Putri Ke-2 dari Keluarga Bapak M. Soleh & Ibu Ida Huraidah
@@ -53,7 +53,7 @@
         </div>
         
         <div class="section">
-            <h2 class="Resepsi">Resepsi</h2>
+            <h2 class="KeduaMempelai">- Resepsi -</h2>
             <p class="tempatacara">Acara InsyaAllah dilaksanakan di tempat mempelai wanita.</p>
 
             <!-- map -->
@@ -65,7 +65,7 @@
         </div>
         
         <div class="container" style="max-width: max-content;">
-            <h2 class="Reservasi">Reservasi</h2>
+            <h2 class="Reservasi">- Reservasi -</h2>
             <form id="reservationForm">
                 <input type="text" id="nama" placeholder="Nama Anda" required>
                 <select id="kehadiran">
@@ -73,36 +73,58 @@
                     <option value="Tidak Hadir">Tidak Hadir</option>
                 </select>
                 <textarea id="pesan" placeholder="Pesan (Opsional)"></textarea>
-                <button class="" type="submit">Kirim</button>
+                <div class="" type="submit"><button><img src="assetcont/img/kirim.svg" class="kirim" alt=""></button></div>
             </form>
             <p id="status" style="color: green; display: none;">Terima kasih! Data Anda telah dikirim.</p>
-        
         </div>
         <!-- buat kado pasangan pengantin  -->
-        <div class="kado-section">
-            <h3>Hadiah untuk Pengantin</h3>
-            <p>Jika ingin memberikan tanda kasih, bisa melalui rekening berikut:</p>
-            
-            <div class="rekening">
-                <span id="nomorRekening"> 081214640275 <br> (Dana A/n Nursofiatun Khofifah)</span>
-                <button onclick="salinRekening()">Salin Rekening</button>
-            </div>
-            
-            <a href="https://link.dana.id/minta/2vs0xt33go8"target="_blank" class="transfer-button">
-                Transfer Sekarang
-            </a>
+         <div class="Wedding Gift" >
+            <h2 class="KeduaMempelai">- Wedding Gift - </h2>
+         </div>
+        <div class="card">
+        <div class="bank-logo"><img src="assetcont/img/BRI.svg" alt="" class="Bank" ></div>
+        <div class="info">
+            <p class="label">Nomor Rekening</p>
+            <p class="account-number" id="account-number">415301005680503</p>
+            <p class="label">Pemilik Rekening</p>
+            <p class="owner-name">NUR LATIF JULIYANTO</p>
         </div>
-        <div class="kado-section">
-            <div class="rekening">
-                <span id="nomorRekening">1234567890 (BCA - A/N Nama Pengantin)</span>
-                <button onclick="salinRekening()">Salin Rekening</button>
+        <div class="actions">
+            <div class="btn" onclick="copyAccount()">
+                <img src="assetcont/img/btncopy.svg" alt="" class="small-img">
             </div>
-            <a href="https://m-bca.onelink.me/QKON/xxxxxx" target="_blank" class="transfer-button">
-                Transfer Sekarang
-            </a>
         </div>
-        
-        
+
+    </div>
+        <div class="card">
+        <div class="bank-logo"><img src="assetcont/img/SB.svg" alt="" class="Bank" ></div>
+        <div class="info">
+            <p class="label">Nomor Rekening</p>
+            <p class="account-number" id="account-number">901265612722</p>
+            <p class="label">Pemilik Rekening</p>
+            <p class="owner-name">NURSOFIATUN KHOFIFAH</p>
+        </div>
+        <div class="actions">
+            <div class="btn" onclick="copyAccount()">
+                <img src="assetcont/img/btncopy.svg" alt="" class="small-img">
+            </div>
+        </div>
+
+    </div>
+        <div class="card">
+        <div class="bank-logo"><img src="assetcont/img/DANA.svg" alt="" class="Bank" ></div>
+        <div class="info">
+            <p class="label">Nomor Rekening</p>
+            <p class="account-number" id="account-number">081214640275</p>
+            <p class="label">Pemilik Rekening</p>
+            <p class="owner-name">NURSOFIATUN KHOFIFAH</p>
+        </div>
+        <div class="actions">
+            <div class="btn" onclick="copyAccount()">
+                <img src="assetcont/img/btncopy.svg" alt="" class="small-img">
+            </div>
+        </div>
+    </div>
          <!-- end kado  -->
     </div>
 </body>
