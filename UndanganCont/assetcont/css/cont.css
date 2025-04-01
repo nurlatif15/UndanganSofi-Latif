@@ -19,6 +19,10 @@ body {
     padding: 20px;
     min-height: 100vh;
     overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 button{
     border: none;
