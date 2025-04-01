@@ -30,6 +30,10 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
         return;
     }
 
+    // Menambahkan kelas loading ke tombol kirim
+    let submitButton = document.getElementById("submitButton");
+    submitButton.classList.add("loading");
+
     let data = {
         nama: nama,
         kehadiran: kehadiran,
@@ -46,9 +50,15 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
     }).then(() => {
         document.getElementById("status").style.display = "block";
         document.getElementById("reservationForm").reset();
+
+        // Menghapus kelas loading dan menampilkan pesan sukses
         setTimeout(() => {
-            document.getElementById("status").style.display = "none";
-        }, 3000);
+            submitButton.classList.remove("loading"); // Hapus animasi loading
+            document.getElementById("status").style.display = "none"; // Sembunyikan status setelah beberapa detik
+
+            // Refresh halaman setelah 3 detik
+            window.location.reload();
+        }, 3000); // Sembunyikan status setelah 3 detik
     }).catch(error => console.error("Error:", error));
 });
 
@@ -60,3 +70,7 @@ function copyAccount() {
         alert("Nomor rekening disalin!");
     });
 }
+
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
