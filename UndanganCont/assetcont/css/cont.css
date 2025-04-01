@@ -338,5 +338,61 @@ input, select, textarea {
     width: 80px; /* Atur ukuran sesuai kebutuhan */
     height: auto; /* Biarkan proporsi tetap terjaga */
 }
+* Animasi Fade In dari Bawah ke Atas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-    /*  */
+/* Terapkan animasi ke semua elemen utama */
+.invitation-container, .card, .Akad, .barakad, .section, .map-container, .container, .Wedding, .card-1 {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Tambahkan delay agar efek masuk lebih menarik */
+.card:nth-child(1) { animation-delay: 0.2s; }
+.Akad { animation-delay: 0.4s; }
+.card:nth-child(2) { animation-delay: 0.6s; }
+.barakad { animation-delay: 0.8s; }
+.section { animation-delay: 1s; }
+.map-container { animation-delay: 1.2s; }
+.container { animation-delay: 1.4s; }
+.Wedding { animation-delay: 1.6s; }
+.card-1 { animation-delay: 1.8s; }
+
+/* Animasi loading untuk tombol kirim */
+button.loading {
+    position: relative;
+    pointer-events: none;
+}
+
+button.loading::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    animation: spin 1s linear infinite;
+}
+
+/* Animasi berputar */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Saat tombol loading, sembunyikan gambar kirim */
+button.loading img {
+    visibility: hidden;
+}
+
