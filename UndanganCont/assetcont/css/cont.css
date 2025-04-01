@@ -72,24 +72,41 @@ button{
 
 }
 
-.namaPasangan{
-    color: #241917;
-    font-weight: 400;
-    font-size: 20px;
-    font-family: "Head";
-    margin-bottom: 100px; 
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    margin: 10px 0px 20px 0px;
 }
-.namaortu1{
-    color: #241917;
-    font-size: 10px;
-    font-family: "Head";
-    margin-bottom: 24px;  
+.card img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
-.namaortu2{
-    color: #241917;
-    font-size: 10px;
+.name {
     font-family: "Head";
-    margin-bottom: 24px;  
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.parents {
+    font-family: "Head";
+    font-size: 14px;
+    color: #555;
+    padding: 5px;
+}
+@media (max-width: 380px) {
+    body {
+        padding: 5px;
+    }
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
 }
 .Akad {
     font-weight: 400;
@@ -106,6 +123,8 @@ button{
     padding: 20px; /* Beri jarak agar teks lebih jelas */
     text-align: center; /* Tengahin teks */
     border-radius: 200px 200px 0 0;
+    margin-top: 50px;
+
 }
 .texthitungmundur{
     font-family: "Head";
@@ -113,7 +132,7 @@ button{
 }
 
 /* Responsif untuk layar kecil */
-@media (max-width: 480px) {
+@media (max-width: 363px) {
     .invitation-container {
         padding: 15px;
     }
@@ -135,6 +154,9 @@ button{
 
     p {
         font-size: 12px;
+    }
+    .KeduaMempelai{
+        font-size: 38px;
     }
 }
 /* Hitun mundur */
@@ -187,7 +209,6 @@ button{
     }
 }
 
-
 .map-container iframe {
     width: 100%;
     height: 300px; /* Ukuran default */
@@ -207,7 +228,12 @@ button{
     .tempatacara{
         font-family: "Head";
     }
-
+    .tempat-acara-1 {
+        margin-top: -30px;
+        font-family: "Head";
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
     .ceklokasi img{
         width: 180px;
     }
@@ -257,7 +283,7 @@ input, select, textarea {
     height: auto; /* Biarkan proporsi tetap terjaga */   
 }
 /* kado */
-.card {
+.card-1 {
     width: 320px;
     height: 180px;
     background: linear-gradient(135deg, #fff1f1, #f59e9e);
@@ -312,3 +338,5 @@ input, select, textarea {
     width: 80px; /* Atur ukuran sesuai kebutuhan */
     height: auto; /* Biarkan proporsi tetap terjaga */
 }
+
+    /*  */
